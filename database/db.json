@@ -1,0 +1,62 @@
+{
+  "categorias": [
+    {
+      "nombre": "a",
+      "id": 1
+    },
+    {
+      "nombre": "Muebles y Articulos de Oficina",
+      "id": 2
+    },
+    {
+      "nombre": "Maquinarias",
+      "id": 3
+    }
+  ],
+  "area": [
+    {
+      "nombreArea": "as",
+      "nombreEncargado": "asa",
+      "numeroFuncionarios": "assa",
+      "id": 1
+    },
+    {
+      "nombreArea": "Informatica",
+      "nombreEncargado": "Jose Suarez",
+      "numeroFuncionarios": "2",
+      "id": 2
+    },
+    {
+      "nombreArea": "Legal",
+      "nombreEncargado": "Luis Linares",
+      "numeroFuncionarios": "8",
+      "id": 3
+    }
+  ],
+  "activos": [
+    {
+      "id": 1,
+      "categoria": null,
+      "marca": null,
+      "modelo": null,
+      "estado": null,
+      "area": null
+    },
+    {
+      "categoria": 2,
+      "marca": "as",
+      "modelo": "as",
+      "estado": "Nuevo",
+      "area": 3,
+      "id": 2
+    },
+    {
+      "categoria": 2,
+      "marca": "aa",
+      "modelo": "12",
+      "estado": "Nuevo",
+      "area": 1,
+      "id": 3
+    }
+  ]
+}
