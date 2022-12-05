@@ -25,7 +25,7 @@ docker-compose up -d json-server´
 ```
 docker-compose up -d frontend
 ```
-##Para Verificar que la base de datos se levanto correctamente podemos probar en:
+## Para Verificar que la base de datos se levanto correctamente podemos probar en:
 ```
 localhost:3000
 ```
