@@ -1,17 +1,23 @@
 version: "3.7"
+
 services:
-
-  backend:
-    image: lab4-webapp:latest
+  json-server:
+    container_name: database_json
+    image: vimagick/json-server
+    command: -H 0.0.0.0 -p 3000 -w db.json
     ports:
-       - "3000:3000"    
-
+      - "3000:3000"
+    volumes:
+      - ./database:/data
+    
   frontend:
-    build:
-      context:  .
-      dockerfile: Dockerfile
-    container_name: frontendvue
+    container_name: vue_ui
+    build: 
+      context: .
+      target: "develop-stage"
+    volumes:
+      - .:/app      
     ports:
-       - "8083:8083"     
-    depends_on:
-      - backend
+      - "8083:8083"
+    command: /bin/sh -c "yarn serve"
+  
